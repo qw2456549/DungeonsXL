@@ -1,12 +1,12 @@
+announce:
+  help: /dxl announce [name] - Runs an announcement script
 announcer:
-  click: "&4&l=> &6點擊此處加入 &4&l<="
-button: 
+  click: '&4&l=> &6點擊此處加入 &4&l<='
+button:
   accept: "&a[ 接受 ]"
   deny: "&4[ 拒絕 ]"
   okay: "&a[ OK ]"
 cmd:
-  announce:
-    help: "/dxl announce [name] - 運行公告腳本"
   break:
     breakMode: "&6您現在可以打破DungeonsXL保護的方塊."
     help: "/dxl break - 打破DungeonsXL保護的方塊"
@@ -57,69 +57,67 @@ cmd:
   help:
     help: "/dxl help [page] - 顯示説明頁面"
   import:
-    help: "/dxl import [world] - 從世界列表中導入世界作為副本地圖"
-    success: "&6成功導入世界 &4&v1&6."
+    help: /dxl import [world] - 從世界列表中導入世界作為副本地圖
+    success: '&6成功導入世界 &4&v1&6.'
   invite:
-    help: "/dxl invite [player] [dungeon] - 邀請玩家編輯副本"
-    success: "&6玩家 &4&v1&6 被成功邀請編輯地圖 &4&v2&6."
+    help: /dxl invite [player] [dungeon] - 邀請玩家編輯副本
+    success: '&6玩家 &4&v1&6 被成功邀請編輯地圖 &4&v2&6.'
   join:
-    help: "/dxl join [announcement] - 打開菜單加入即將參加的遊戲的團隊
+    help: /dxl join [announcement] - 打開 GUI 加入即將開始遊戲的團隊
   kick:
-    help: "/dxl kick [player] - 將玩家踢出團隊和副本"
-    success: "&6Successfully 玩家 &4&v1&6 被踢出團隊."
+    help: /dxl kick [player] - 將玩家踢出團隊並且離開副本
+    success: '&6成功將玩家 &4&v1&6 被踢出團隊.'
   leave:
-    help: "/dxl leave - 離開當前團隊和副本或編輯世界"
-    success: "&6您已成功離開團隊."
+    help: /dxl leave - 離開正在編輯的世界或團隊
+    success: '&6成功離開團隊'
   list:
-    help: "/dxl list ([dungeon|map|loaded]) ([dungeon]) - 列出所有副本"
+    help: /dxl list ([dungeon|map|loaded]) ([dungeon]) - 列出所有副本
   lives:
     group: "&4&v1 &6剩餘 &4&v2 &6生命."
     help: "/dxl lives [玩家名] - 顯示玩家剩餘的生命"
     player: "&4&v1 &6剩餘 &4&v2 &6生命."
   main:
-    compatibility: "&eInternals: &o[&v1] &eVault: &o[&v2] &eItemsXL: &o[&v3]"
-    help: "/dxl - 一般狀態資訊"
-    helpInfo: "&7輸入 &o/dxl help&r&7 以獲取更多資訊."
-    loaded: "&e地圖: &o[&v1] &e副本: &o[&v2] &e已載入: &o[&v3] &e玩家: &o[&v4]"
-    welcome: "&7歡迎來到&4副本&fXL"
+    compatibility: '&eInternals: &o[&v1] &eVault: &o[&v2] &eItemsXL: &o[&v3]'
+    help: /dxl - 一般狀態資訊
+    helpInfo: '&7輸入 &o/dxl help&r&7 以獲取更多資訊.'
+    loaded: '&e地圖: &o[&v1] &e副本: &o[&v2] &e已載入: &o[&v3] &e玩家: &o[&v4]'
+    welcome: '&7歡迎來到 &4Dungeons&fXL'
   msg:
     added: "&6新的訊息 (&4&v1&6) 已添加了."
     help: "/dxl msg [id] '[msg]' - 顯示或編輯訊息"
     updated: "&6訊息 (&4&v1&6) 更新."
   play:
-    help: "/dxl play [name] - 允許玩家在沒有傳送門的情況下玩副本"
+    help: /dxl play [name] - 允許玩家在沒有傳送門的情況下玩副本
   portal:
-    help: "/dxl portal ([material=portal]) - 創建一個通向副本的傳送門"
+    help: /dxl portal ([material=portal]) - 創建一個通向副本的傳送門
   reload:
-    buttonCaliburn: "&9[ 重新載入副本內容 ]"
-    caliburn: "&e自訂物品: &o[&v1] &e怪物: &o[&v2] &e戰利品表: &o[&v3]"
-    help: "/dxl reload - 重新載入外掛程式"
-    players: "&4Warning: 如果您重新載入外掛程式，所有玩家將被踢出他們的遊戲."
-    success: "&7成功重新載入了DungeonsXL."
+    help: /dxl reload - 重新加載插件
+    players: '&4如果重新加載插件,所有人將會被迫離開副本.'
+    success: '&7成功重載 DungeonsXL.'
   rename:
-    help: "/dxl rename [old name] [new name] - 將地圖名稱重命名。此命令不會破壞包含此地圖的副本."
-    success: "&6成功將&4&v1&6重命名地圖為 &4&v2&6."
+    help: /dxl rename [old name] [new name] - 將地圖名稱重命名。此命令不會破壞此地圖.
+    success: '&6成功將副本名稱從 &4&v1&6 改為 &4&v2&6.'
   resourcePack:
-    help: "/dxl resourcepack [ID] - 下載在主設定檔中註冊的資源包；使用“reset”去重置"
+    help: /dxl resourcepack [ID] - 載在主設定檔中註冊的資源包；使用“reset”去重置
   save:
-    help: "/dxl save - 保存當前的副本地圖"
-    success: "&6地圖已保存."
+    help: /dxl save - 保存當前的副本地圖
+    success: '&6地圖已保存.'
   status:
-    help: "/dxl status - 顯示DungeonsXL的狀態"
+    help: /dxl status - 顯示DungeonsXL的狀態
   test:
-    help: "/dxl test - 以測試模式啟動遊戲"
+    help: /dxl test - 以測試模式啟動遊戲
   uninvite:
-    help: "/dxl uninvite [player] [map] - 取消邀請玩家編輯地圖"
-    success: "&4&v1&6 已成功刪除編輯地圖&4&v2&6的許可權."
+    help: /dxl uninvite [player] [map] - 取消邀請玩家編輯地圖
+    success: '&4&v1&6''已成功刪除編輯地圖&4&v2&6的許可權.'
 dayOfWeek:
-  0: "星期天"
-  1: "星期一"
-  2: "星期二"
-  3: "星期三"
-  4: "星期四"
-  5: "星期五"
-  6: "星期六"
-error: 
+  '0': 星期天
+  '1': 星期一
+  '2': 星期二
+  '3': 星期三
+  '4': 星期四
+  '5': 星期五
+  '6': 星期六
+error:
   bed: "&4無法在副本使用床."
   blockOwnTeam: "&4這個方塊屬屬於你們團隊."
   chestIsOpened: "&4這個箱子已經被打開過了."
@@ -165,7 +163,7 @@ error:
   tooManyInstances: "&4太多的副本正在運行請稍等一會兒."
   tooManyTutorials: "&4有太多的教程正在運行,請稍等一會兒."
   tutorialDoesNotExist: "&4教程副本不存在."
-group: 
+group:
   bedDestroyed: "&6團隊 &4&v1 &6的床被 &4&v2&6摧毀了!."
   congrats: "&6大吉大利!"
   congratsSub: "&l&4你的團隊 &v1 &4獲得了勝利."
@@ -187,8 +185,8 @@ group:
   playerJoined: "&6玩家 &4&v1&6 加入了小."
   rewardChest: "&6您的團隊獲得了獎勵寶箱."
   uninvitedPlayer: "&4&v1&6 收回 &4&v2&6 加入團隊 &4&v3&6 的邀請."
-  waveFinished: "&6你團隊擊敗了第 &4&v1&6波怪物. 下一波怪物將在 &4&v2&6秒後出現.."
-player: 
+  waveFinished: "&6你的隊伍擊敗了第 &4&v1&6波怪物. 下一波怪物將在 &4&v2&6秒後出現.."
+player:
   blockInfo: "&6方塊ID: &2&v1"
   checkpointReached: "&6到達檢查點."
   death: "&4&v1 &6已經死亡,剩餘 &4&v2 &6生命."
@@ -197,17 +195,17 @@ player:
   finished_Floor: "&&6成功完成當前關卡."
   invited: "&4&v1&6 邀請你加入團隊 &4&v2&6."
   joinGroup: "&6成功加入團隊."
-  Kicked: "&4你被移出了團隊 &6&v1&4."
-  Killed: "&4&v1 &6被 &4&v2 &6擊殺了,剩餘 &4&v3 &6生命."
-  KilledKick: "&4&v1&6 被 &4&v2 &6擊殺了並且失去了生命."
-  LeaveGroup: "&6成功離開團隊!"
-  LeftGroup: "&6玩家 &4&v1&6 離開了團隊!"
-  LivesAdded: "&6獲得了剩餘 &4&v1&6 生命的獎勵."
-  LivesRemoved: "&6你失去了 &4&v1&6 生命!"
-  LootAdded: "&4&v1&6 被加入了你的獎勵箱!"
+  kicked: "&4你被移出了團隊 &6&v1&4."
+  killed: "&4&v1 &6被 &4&v2 &6擊殺了,剩餘 &4&v3 &6生命."
+  killedKick: "&4&v1&6 被 &4&v2 &6擊殺了並且失去了生命."
+  leaveGroup: "&6成功離開團隊!"
+  leftGroup: "&6玩家 &4&v1&6 離開了團隊!"
+  livesAdded: "&6獲得了剩餘 &4&v1&6 生命的獎勵."
+  livesRemoved: "&6你失去了 &4&v1&6 生命!"
+  lootAdded: "&4&v1&6 被加入了你的獎勵箱!"
   newLeader: "&6您現在是團隊的新隊長."
-  Offline: "&玩家 &4&v1&6 離線了. 在 &4&v2&6 秒後將被踢出副本!"
-  OfflineNever: "&6玩家 &4&v1&6 離線了. 但是他不會被系統自動移除副本!"
+  offline: "&玩家 &4&v1&6 離線了. 在 &4&v2&6 秒後將被踢出副本!"
+  offlineNever: '&6玩家 &4&v1&6 離線了. 但是他不會被系統自動移除副本!'
   portal:
     abort: "&6傳送門創建被取消."
     created: "&6傳送門已經被創建."
@@ -225,32 +223,32 @@ player:
   unlimitedLives: "無限"
   waitForOtherPlayers: "&6等待團隊成員..."
 requirement: 
-  fee: "&6你花費了 &4&v1 &6貨幣進入副本."
+  fee: "&6你花費了 &4&v1 &6的錢進入副本."
   feeItems: "物品"
   feeLevel: "等級"
-  feeMoney: "貨幣"
+  feeMoney: "錢"
   forbiddenItems: "禁止物品"
   groupSize: "團隊人數上限"
-  keyItems: "Keys"
+  keyItems: "鑰匙"
   permission: "許可權"
   timeframe: "時間範圍"
-reward: 
-  general: "&6完成了副本,你獲得了 &4&v1 &6."
-sign: 
-  end: "&a結束"
-  floor: 
-    1: "&a進入"
-    2: "&a下一層"
-  global: 
-    full: "&4團隊已滿"
-    isPlaying: "&4遊戲中"
-    joinGame: "&a加入遊戲"
-    joinGroup: "&a加入團隊"
-    newGame: "&a新遊戲"
-    newGroup: "&a新的團隊"
-  leave: "&a離開"
-  ready: "&a準備"
-  resourcePack: "&a下載資源包"
-  wave: 
-    1: "&a開始"
-    2: "&a下一波"
+reward:
+  general: '&6完成了副本,你獲得了 &4&v1 &6.'
+sign:
+  end: '&a結束'
+  floor:
+    '1': '&a進入'
+    '2': '&a下一層'
+  global:
+    full: '&4隊伍已滿'
+    isPlaying: '&4遊戲中'
+    joinGame: '&a加入遊戲'
+    joinGroup: '&a加入隊伍'
+    newGame: '&a新遊戲'
+    newGroup: '&a新隊伍'
+  leave: '&a離開'
+  ready: '&a準備'
+  resourcePack: '&a下載資源包'
+  wave:
+    '1': '&a開始'
+    '2': '&a下一波'
